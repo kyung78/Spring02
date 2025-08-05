@@ -11,7 +11,7 @@ import org.springframework.web.service.annotation.GetExchange;
 public class Spring02Application {
 	@GetMapping("/")
 	public String tiger() {
-		return "Spring02:1450";
+		return "Spring02:1534";
 	}
 
 	public static void main(String[] args) {
