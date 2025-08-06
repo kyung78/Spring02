@@ -7,7 +7,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Git 저장소에서 코드를 가져오는 단계
-                git 'https://github.com/kyung78/Spring02.git'
+                       git branch: 'main', url: 'https://github.com/kyung78/Spring02.git'
+
             }
         }
         stage('Build') {
