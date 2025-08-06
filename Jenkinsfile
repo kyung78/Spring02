@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 // 빌드를 수행하는 명령어 (예: mvn clean package)
-                echo 'Building the project...'
+                echo 'Building the project..dd.'
             }
         }
         // 필요한 다른 stage들을 추가합니다.
