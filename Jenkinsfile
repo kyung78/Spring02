@@ -10,7 +10,7 @@ pipeline {
         
         stage('1. Build') {
             steps {
-                echo 'Maven으로 빌드 시작'
+                echo 'Maven으로 빌드 시작.'
                 sh 'mvn clean package'
             }
         }
