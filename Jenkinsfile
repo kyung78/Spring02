@@ -7,7 +7,7 @@ pipeline {
     environment {
         APP_NAME = 'ex02-app'
         DOCKER_TAG = 'latest'
-        IMAGE_NAME = "kjno/${APP_NAME}:${DOCKER_TAG}"
+        IMAGE_NAME = "belokana/${APP_NAME}:${DOCKER_TAG}"
         TARGET_HOST = '192.168.56.107'
         TARGET_USER = 'vagrant'
         PORT = '8081'
@@ -58,7 +58,7 @@ pipeline {
                         # 기존 컨테이너 제거, 없을 경우 에러 무시
                         docker rm -f $APP_NAME 2>/dev/null || true
                         docker run -d -p $PORT:$PORT --name $APP_NAME $IMAGE_NAME
-EOF # 반드시 맨앞에
+EOF
                 '''
             }
         }        
